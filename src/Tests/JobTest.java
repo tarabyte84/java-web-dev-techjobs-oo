@@ -117,6 +117,13 @@ public class JobTest {
 
     //TODO: Tests for toString() method - (Bonus) If a Job object ONLY contains data for the id field, the method
     // should return, “OOPS! This job does not seem to exist.”
+    @Test
+
+    public void shouldReturnMessageIfJobOnlyContainsID() {
+        Job job1 = new Job();
+
+        assertTrue(job1.toString().contains("Oops! This job does not seem to exist"));
 
 
+    }
 }
