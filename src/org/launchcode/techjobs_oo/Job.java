@@ -96,4 +96,10 @@ public class Job {
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
     }
+
+    @Override
+    public String toString() {
+        return
+                "\n\n" + "Hey hey this is a Job string" + "\n\n";
+    }
 }
