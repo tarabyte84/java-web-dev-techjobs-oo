@@ -100,6 +100,26 @@ public class Job {
     @Override
     public String toString() {
         return
-                "\n\n" + "Hey hey this is a Job string" + "\n\n";
+                "\n\n" +
+                "ID: " + id + "\n" +
+                "Name: " + name + "\n" +
+                "Employer: " + employer + "\n" +
+                "Location: " + location + "\n" +
+                "Position Type: " + positionType + "\n" +
+                "Core Competency: " + coreCompetency + "\n" +
+                "\n";
     }
+
+
+//    @Override
+//    public String toString() {
+//        return "Job{" +
+//                "id=" + id +
+//                ", name='" + name + '\'' +
+//                ", employer=" + employer +
+//                ", location=" + location +
+//                ", positionType=" + positionType +
+//                ", coreCompetency=" + coreCompetency +
+//                '}';
+//    }
 }
