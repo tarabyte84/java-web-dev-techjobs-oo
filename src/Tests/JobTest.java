@@ -9,12 +9,6 @@ import static org.junit.Assert.*;
 
 public class JobTest {
 
-//    Car test_car;
-//
-//    @Before
-//    public void createCarObject() {
-//        test_car = new Car("Toyota", "Prius", 10, 50);
-//    }
     Job job1;
     Job job2;
 
@@ -76,17 +70,12 @@ public class JobTest {
         assertEquals(job1.toString().indexOf("\n"), 0);
     }
 
-//    @Test
-//    public void jobObjectStringEndsWithBlankLine() {
-//        Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new
-//                PositionType("Quality control"), new CoreCompetency("Persistence"));
-//
-//        String jobString = job1.toString();
-//        String substring = jobString.substring(1);
-//
-//       assertTrue(substring.equals("\n"));
-//        assertEquals(substring, "\n");
-//    }
+    @Test
+    public void jobObjectStringEndsWithBlankLine() {
+        Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new
+                PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertEquals(job1.toString().charAt(job1.toString().length()-1), '\n');
+    }
     //TODO: Tests for toString() method - the string should contain a label for each field, followed by the data stored
     // in that field. Each field should be on its own line.
     @Test

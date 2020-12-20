@@ -101,6 +101,12 @@ public class Job {
     public String toString() {
         if(name == null && employer == null && location == null && positionType == null && coreCompetency == null) {
             return "Oops! This job does not seem to exist";
+//        if(this.getName() == null) {
+//            this.setName(String "Data not available");
+//        }
+//        if(this.getEmployer() == null) {
+//            setEmployer(new Employer("data not available") );
+//        }
         } else return
                 "\n\n" +
                 "ID: " + id + "\n" +
