@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.launchcode.techjobs_oo.*;
 
-import static junit.framework.TestCase.fail;
 import static org.junit.Assert.*;
 
 public class JobTest {
@@ -66,7 +65,6 @@ public class JobTest {
     public void jobObjectStringBeginsWithBlankLine() {
         Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new
                 PositionType("Quality control"), new CoreCompetency("Persistence"));
-
         assertEquals(job1.toString().indexOf("\n"), 0);
     }
 
@@ -101,7 +99,6 @@ public class JobTest {
         job1.setCoreCompetency(new CoreCompetency(""));
         job1.setPositionType(new PositionType(""));
 
-
         assertTrue(job1.toString().contains("Location: Data not available"));
         assertTrue(job1.toString().contains("Employer: Data not available"));
         assertTrue(job1.toString().contains("Position Type: Data not available"));
@@ -114,9 +111,6 @@ public class JobTest {
 
     public void shouldReturnMessageIfJobOnlyContainsID() {
         Job job1 = new Job();
-
         assertTrue(job1.toString().contains("Oops! This job does not seem to exist"));
-
-
     }
 }
