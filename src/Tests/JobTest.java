@@ -95,8 +95,12 @@ public class JobTest {
     // label.
     @Test
     public void jobObjectStringShouldAddDataNotAvailableIfFieldEmpty() {
-        Job job1 = new Job("Product tester", new Employer(), new Location(), new
-                PositionType(), new CoreCompetency());
+        Job job1 = new Job();
+        job1.setEmployer(new Employer(""));
+        job1.setLocation(new Location(""));
+        job1.setCoreCompetency(new CoreCompetency(""));
+        job1.setPositionType(new PositionType(""));
+
 
         assertTrue(job1.toString().contains("Location: Data not available"));
         assertTrue(job1.toString().contains("Employer: Data not available"));

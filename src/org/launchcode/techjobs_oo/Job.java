@@ -108,14 +108,13 @@ public class Job {
 //            setEmployer(new Employer("data not available") );
 //        }
         } else return
-                "\n\n" +
+                "\n" +
                 "ID: " + id + "\n" +
                 "Name: " + name + "\n" +
                 "Employer: " + employer + "\n" +
                 "Location: " + location + "\n" +
                 "Position Type: " + positionType + "\n" +
-                "Core Competency: " + coreCompetency + "\n" +
-                "\n";
+                "Core Competency: " + coreCompetency + "\n";
     }
 
 

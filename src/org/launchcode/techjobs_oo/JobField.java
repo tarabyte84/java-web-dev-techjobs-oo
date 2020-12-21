@@ -39,7 +39,7 @@ public abstract class JobField {
     // TODO: Custom toString, equals, and hashCode methods:
     @Override
     public String toString() {
-        if(value == null) {
+        if(value == "") {
             return "Data not available";
         } else {
             return value;
